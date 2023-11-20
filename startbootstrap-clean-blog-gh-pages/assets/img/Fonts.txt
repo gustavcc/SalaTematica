@@ -1,0 +1,9 @@
+Fonts used in this design:
+
+Font: Museo
+Author: Exljbris
+Url: http://www.fontsquirrel.com/fonts/museo
+
+Font: Museo Sans
+Author: Exljbris
+Url: http://www.fontsquirrel.com/fonts/museo-sans
