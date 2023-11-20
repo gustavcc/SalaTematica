@@ -637,6 +637,9 @@ progress {
 .container-lg,
 .container-md,
 .container-sm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   width: 100%;
@@ -10674,6 +10677,9 @@ footer {
 }
 
 header.masthead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   margin-bottom: 3rem;
   padding-top: calc(8rem + 57px);
