@@ -12,6 +12,7 @@
  */
 
  .flex{
+  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,7 +24,12 @@
   box-shadow: 1px 1px 10px black;
  }
 
+ .flex p{
+  padding: 0 0 0 20px;
+ }
+
  #ativarMicrofone{
+  font-family: Arial, Helvetica, sans-serif;
   background-image: url(../img/microphone_833723.png);
   border: 2px solid black;
   background-size: cover;
@@ -35,7 +41,16 @@
   cursor: pointer;
  }
 
+.fechar {
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  color: #fff;
+  background: #000;
+}
+
  #ativarMicrofone:hover{
+  padding: 10px;
   border-radius: 50px;
   transition: 0.7s;
   filter: drop-shadow(1px 0px 10px black);
@@ -45,10 +60,13 @@
  #popup {
   overflow: hidden;
 
+  height: auto;
   display: none;
-  position: fixed;
+  flex-wrap: wrap;
+  position: absolute;
   top: 50%;
   left: 50%;
+  border-radius: 20px;
   transform: translate(-50%, -50%);
   padding: 20px;
   background-color: #fff;
@@ -59,6 +77,16 @@
   /* text-align: center; */
   color: gray;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 400px) {
+  #popup {
+    top: 700px;
+  }
+
+  .flex p {
+    font-size: 12pt;
+  }
 }
 
 
