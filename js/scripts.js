@@ -53,33 +53,31 @@ document.getElementById('ativarMicrofone').addEventListener('click', function ()
 
     // Verificar frases e redirecionar
     if (fraseLowerCase.includes('desigualdades raciais')) {
-        window.location.href = 'post3.html';
+        window.location.href = 'https://655c0ce04572f21c3a165f5a--boisterous-phoenix-ac5457.netlify.app/grupo1';
     } else if (fraseLowerCase.includes('impacto das')) {
-        window.location.href = 'post6.html';
-    } else if (fraseLowerCase.includes('tecnologias para')) {
-        window.location.href = 'https://www.site.com';
+        window.location.href = 'https://655c0ce04572f21c3a165f5a--boisterous-phoenix-ac5457.netlify.app/grupo6';
+    } 
+    else if (fraseLowerCase.includes('inclusão racial')) {
+        window.location.href = 'https://655c0ce04572f21c3a165f5a--boisterous-phoenix-ac5457.netlify.app/grupo3';
     }
-    else if (fraseLowerCase.includes('educação e capacitação')) {
-        window.location.href = 'https://www.site.com';
-    }
-    else if (fraseLowerCase.includes('participação racial')) {
+    else if (fraseLowerCase.includes('parcerias interétnicas')) {
         window.location.href = 'https://www.site.com';
     }
     else if (fraseLowerCase.includes('desenvolvimento de')) {
-        window.location.href = 'https://www.site.com';
+        window.location.href = 'https://655c0ce04572f21c3a165f5a--boisterous-phoenix-ac5457.netlify.app/grupo4';
     }
-    else if (fraseLowerCase.includes('políticas públicas')) {
-        window.location.href = 'https://www.site.com';
-    }
-    else if (fraseLowerCase.includes('parcerias e colaborações')) {
-        window.location.href = 'https://www.site.com';
-    }
-    else if (fraseLowerCase.includes('desafios e oportunidades')) {
-        window.location.href = 'https://www.site.com';
-    }
-    else if (fraseLowerCase.includes('ação coletiva')) {
-        window.location.href = 'https://www.site.com';
-    }
+    // else if (fraseLowerCase.includes('políticas públicas')) {
+    //     window.location.href = 'https://www.site.com';
+    // }
+    // else if (fraseLowerCase.includes('parcerias e colaborações')) {
+    //     window.location.href = 'https://www.site.com';
+    // }
+    // else if (fraseLowerCase.includes('desafios e oportunidades')) {
+    //     window.location.href = 'https://www.site.com';
+    // }
+    // else if (fraseLowerCase.includes('ação coletiva')) {
+    //     window.location.href = 'https://www.site.com';
+    // }
     }  
 
     function mostrarPopup() {
