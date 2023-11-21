@@ -27,3 +27,70 @@ window.addEventListener('DOMContentLoaded', () => {
         scrollPos = currentTop;
     });
 })
+document.getElementById('ativarMicrofone').addEventListener('click', function () {
+    if ('webkitSpeechRecognition' in window) {
+        var recognition = new webkitSpeechRecognition();
+        recognition.continuous = false;
+        recognition.lang = 'pt-BR';
+
+        recognition.onresult = function (event) {
+        var result = event.results[0][0].transcript;
+        document.getElementById('textoReconhecido').innerText = 'Texto reconhecido: ' + result;
+
+        // Verificar frases e redirecionar
+        verificarFrases(result);
+        };
+
+        recognition.start();
+    } else {
+        alert('Seu navegador não suporta a API de reconhecimento de fala.');
+    }
+    });
+
+    function verificarFrases(frase) {
+    // Converter para minúsculas para tornar a comparação sem distinção entre maiúsculas e minúsculas
+    var fraseLowerCase = frase.toLowerCase();
+
+    // Verificar frases e redirecionar
+    if (fraseLowerCase.includes('desigualdades raciais')) {
+        window.location.href = 'post3.html';
+    } else if (fraseLowerCase.includes('impacto das')) {
+        window.location.href = 'post6.html';
+    } else if (fraseLowerCase.includes('tecnologias para')) {
+        window.location.href = 'https://www.site.com';
+    }
+    else if (fraseLowerCase.includes('educação e capacitação')) {
+        window.location.href = 'https://www.site.com';
+    }
+    else if (fraseLowerCase.includes('participação racial')) {
+        window.location.href = 'https://www.site.com';
+    }
+    else if (fraseLowerCase.includes('desenvolvimento de')) {
+        window.location.href = 'https://www.site.com';
+    }
+    else if (fraseLowerCase.includes('políticas públicas')) {
+        window.location.href = 'https://www.site.com';
+    }
+    else if (fraseLowerCase.includes('parcerias e colaborações')) {
+        window.location.href = 'https://www.site.com';
+    }
+    else if (fraseLowerCase.includes('desafios e oportunidades')) {
+        window.location.href = 'https://www.site.com';
+    }
+    else if (fraseLowerCase.includes('ação coletiva')) {
+        window.location.href = 'https://www.site.com';
+    }
+    }  
+
+    function mostrarPopup() {
+        // Adiciona a classe ao corpo quando o pop-up é aberto
+        // Exibe o pop-up
+        document.getElementById('popup').style.display = 'block';
+
+    }
+
+    function fecharPopup() {
+        // Fecha o pop-up
+        document.getElementById('popup').style.display = 'none';
+
+    }

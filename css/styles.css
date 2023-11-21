@@ -11,6 +11,71 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
+ .flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F2F2F2;
+  color: black;
+  margin: 20px;
+  border-radius: 50px;
+  padding: 0;
+  box-shadow: 1px 1px 10px black;
+ }
+
+ #ativarMicrofone{
+  background-image: url(../img/microphone_833723.png);
+  border: 2px solid black;
+  background-size: cover;
+  border: none;
+  width: 60px;
+  height: 60px;
+  margin: 20px;
+  padding: 10px;
+  cursor: pointer;
+ }
+
+ #ativarMicrofone:hover{
+  border-radius: 50px;
+  transition: 0.7s;
+  filter: drop-shadow(1px 0px 10px black);
+  /* box-shadow: 1px 0px 10px black; */
+ }
+
+ #popup {
+  overflow: hidden;
+
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  font-size: 15px;
+  /* text-align: center; */
+  color: gray;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#popup img{
+  overflow: hidden;
+  position: absolute;
+  left: 65%;
+  top: 63%;
+  opacity: 0.7;
+  width: 200px;
+}
+
+.p{
+  margin: 0;
+}
+
+
  .img {
   height: 80vh;
     

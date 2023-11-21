@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Sala Temática - Home</title>
+        <title>Sala Temática</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -19,7 +19,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="index.html">IF Baiano - Campus Bom Jesus da Lapa</a>
+                <a class="navbar-brand" href="index.html">IF Baiano</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
@@ -33,16 +33,37 @@
             </div>
         </nav>
         <!-- Page Header-->
-        <header class="masthead img" style="background-image: url('assets/img/46656944634_6989e7b532_k.jpg')">
+        <header class="masthead img-post1" style="background-image: url('assets/img/46656944634_6989e7b532_k.jpg')">
             <div class="container position-relative px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <div class="site-heading">
-                            <h1>O Mito da Democracia de Acesso ao Campo 4.0</h1>
+                           <h1>O Mito da Democracia de Acesso ao Campo 4.0</h1>
+                           <div class="flex">
+                            <p>Clique no microfone para pesquisar por voz</p>
+                            <button id="ativarMicrofone" onclick="mostrarPopup()"></button>
+                            </div>
+                        </div>
                         </div>  
                     </div>
                 </div>
             </div>
+            <div id="popup">
+                <img src="img/microphone_833723.png" alt="">
+                                <p>Tente por: "Impacto das Tecnologias Agrícolas na Questão Racial"</p>
+                                <p>Tente por: Desigualdades Raciais no Acesso à Tecnologia no Campo"</p>
+                                <p>Tente por: "Tecnologias para Agricultura Sustentável e Inclusiva"</p>
+                                <p>Tente por: "Educação e Capacitação Tecnológica"</p>
+                                <p>Tente por: "Participação Racial nas Decisões Tecnológicas"</p>
+                                <p>Tente por: "Desenvolvimento de Tecnologia Sensível à Questão Racial"</p>
+                                <p>Tente por: "Parcerias e Colaborações Interétnicas"</p>
+                                <p>Tente por: "Desafios e Oportunidades Futuras"</p>
+                                <p>Tente por: "Ação Coletiva e Mudança Sistêmica"</p>
+                                <p>Tente por: "Políticas Públicas e Igualdade Racial"</p>
+                                <p></p>
+                                <div id="textoReconhecido"></div>
+                                <button onclick="fecharPopup()">Fechar</button>
+                            </div>
         </header>
         <!-- Main Content-->
         <div class="container px-4 px-lg-5">
@@ -56,7 +77,7 @@
                         </a>
                         <p class="post-meta">
                             Posted by
-                            <a href="#!">G. Cardoso, G. de Souza, Luiz Henrique, Natália, Eduardo Victor, Victor Gabriel, Thwaverton, Naiara .</a>
+                            <a href="#!">Gustavo Cardoso, Gustavo de Souza, Yuri Sky, Luiz Henrique.</a>
                         </p>
                     </div>
                     <!-- Divider-->
